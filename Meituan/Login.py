@@ -46,7 +46,7 @@ def login(login_url,csrf,h5fingerprint,encrypt_pwd):
     }
     data={
         'countrycode':86,
-        'email':15797658869,
+        'email':157********,
         'password':encrypt_pwd,
         'origin':'account-login',
         'csrf':csrf,
@@ -62,7 +62,7 @@ def login(login_url,csrf,h5fingerprint,encrypt_pwd):
     print(content.text)
 
 if __name__ == '__main__':
-    pwd='wcdeqqmima1998-'
+    pwd='123456'
     html =get_html(url)
     login_url, csrf = get_param(html)
     h5fingerprint = get_h5F(login_url)
